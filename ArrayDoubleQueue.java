@@ -14,7 +14,7 @@ public class ArrayDoubleQueue<T> {
         size = 0;
     }
 
-    public void addFirst(T data) {
+    public void addFront(T data) {
         if (data == null) {
             throw new java.lang.IllegalArgumentException("Data added cannot "
                     + "be null. Input non-null data.");
@@ -37,7 +37,7 @@ public class ArrayDoubleQueue<T> {
         }
     }
 
-    public void addLast(T data) {
+    public void addBack(T data) {
         if (data == null) {
             throw new java.lang.IllegalArgumentException("Data added cannot "
                     + "be null. Input non-null data.");
@@ -58,7 +58,7 @@ public class ArrayDoubleQueue<T> {
         size++;
     }
 
-    public T removeFirst() {
+    public T removeFront() {
         if (size == 0) {
             throw new java.util.NoSuchElementException("Deque is empty, "
                     + "cannot remove from empty deque.");
@@ -75,7 +75,7 @@ public class ArrayDoubleQueue<T> {
         return removed;
     }
 
-    public T removeLast() {
+    public T removeBack() {
         if (size == 0) {
             throw new java.util.NoSuchElementException("Deque is empty, "
                     + "cannot remove from empty deque.");

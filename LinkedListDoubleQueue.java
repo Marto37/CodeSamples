@@ -4,7 +4,7 @@ public class LinkedListDoubleQueue<T> {
     private LinkedNode<T> tail;
     private int size;
 
-    public void addFirst(T data) {
+    public void addFront(T data) {
         if (data == null) {
             throw new java.lang.IllegalArgumentException("Cannot add null "
                     + "data.");
@@ -19,7 +19,7 @@ public class LinkedListDoubleQueue<T> {
         size++;
     }
 
-    public void addLast(T data) {
+    public void addBack(T data) {
         if (data == null) {
             throw new java.lang.IllegalArgumentException("Cannot add null "
                     + "data.");
@@ -34,7 +34,7 @@ public class LinkedListDoubleQueue<T> {
         size++;
     }
 
-    public T removeFirst() {
+    public T removeFront() {
         if (size == 0) {
             throw new java.util.NoSuchElementException("Queue is empty. Can "
                     + "not remove from empty queue.");
@@ -51,7 +51,7 @@ public class LinkedListDoubleQueue<T> {
         return headData;
     }
 
-    public T removeLast() {
+    public T removeBack() {
         if (size == 0) {
             throw new java.util.NoSuchElementException("Queue is empty. Can "
                     + "not remove from empty queue.");
